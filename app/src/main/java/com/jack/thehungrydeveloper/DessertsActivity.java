@@ -6,14 +6,14 @@ import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class DesertActivity extends AppCompatActivity {
+public class DessertsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desert);
 
-        ListView desertsList = findViewById(R.id.list_view_activity_desert);
+        ListView desertsList = findViewById(R.id.list_view_activity_desserts);
 
         Dish[] deserts = {
                 new Dish("Polenta and pumpkin seed cookies", "Crunchy cookies made with polenta and pumpkin seeds", 124),

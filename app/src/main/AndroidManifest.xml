@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheHungryDeveloper">
         <activity
-            android:name=".DesertActivity"
+            android:name=".DessertsActivity"
             android:label="Deserts"
             android:parentActivityName=".MainActivity" />
         <activity
