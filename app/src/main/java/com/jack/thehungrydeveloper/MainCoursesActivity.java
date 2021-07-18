@@ -6,8 +6,6 @@ import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.jack.thehungrydeveloper.starteractivity.Dish;
-
 public class MainCoursesActivity extends AppCompatActivity {
 
     @Override

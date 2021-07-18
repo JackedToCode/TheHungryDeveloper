@@ -1,4 +1,4 @@
-package com.jack.thehungrydeveloper.starteractivity;
+package com.jack.thehungrydeveloper;
 
 public class Dish {
 

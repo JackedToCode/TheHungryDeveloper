@@ -1,12 +1,10 @@
-package com.jack.thehungrydeveloper.starteractivity;
+package com.jack.thehungrydeveloper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
-import com.jack.thehungrydeveloper.R;
 
 public class StartersActivity extends AppCompatActivity {
 
