@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //set up the intent the startActivity needs that contains where you are now, and where you want to go
+                //or specify what you intent to do, this can be used for things outside the app aswell
                 Intent startersActivityIntent = new Intent(MainActivity.this, StartersActivity.class);
 
                 //starts new activity (new window)
@@ -50,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         startersCard = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_main_courses);
     }
-
 
 
 }

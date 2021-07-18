@@ -34,9 +34,9 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/todo"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/food_one"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/food_one" />
 
 
                 <TextView
@@ -68,9 +68,9 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
+                    android:contentDescription="@string/todo"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/food_two"
-                    android:contentDescription="@string/todo" />
+                    android:src="@drawable/food_two" />
 
                 <TextView
                     android:id="@+id/text_view_mains"
