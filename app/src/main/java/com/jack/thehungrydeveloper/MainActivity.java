@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     CardView startersCard;
     CardView mainsCard;
-    CardView desertCard;
+    CardView dessertsCard;
     TextView emailTextView;
 
     @Override
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(mainCoursesActivityIntent);
         });
 
-        desertCard.setOnClickListener(view -> {
+        dessertsCard.setOnClickListener(view -> {
            Intent desertsActivityIntent = new Intent(MainActivity.this, DessertsActivity.class);
            startActivity((desertsActivityIntent));
         });
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     private void viewFinder() {
         startersCard = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_main_courses);
-        desertCard = findViewById(R.id.card_view_desserts);
+        dessertsCard = findViewById(R.id.card_view_desserts);
         emailTextView = findViewById(R.id.text_view_email_address);
     }
 
