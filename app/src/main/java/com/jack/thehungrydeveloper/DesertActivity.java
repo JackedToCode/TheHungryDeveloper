@@ -28,7 +28,7 @@ public class DesertActivity extends AppCompatActivity {
                 new Dish("Pumpkin and blueberry buns", "Crumbly buns made with spiced pumpkin and fresh blueberry", 194)
         };
 
-        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1);
+        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, deserts);
 
         desertsList.setAdapter(dishesAdapter);
     }

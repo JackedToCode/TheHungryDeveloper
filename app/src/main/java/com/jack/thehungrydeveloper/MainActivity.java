@@ -6,12 +6,14 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     CardView startersCard;
     CardView mainsCard;
+    CardView desertCard;
     TextView emailTextView;
 
     @Override
@@ -42,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(mainCoursesActivityIntent);
         });
 
+        desertCard.setOnClickListener(view -> {
+           Intent desertsActivityIntent = new Intent(MainActivity.this, DesertActivity.class);
+           startActivity((desertsActivityIntent));
+        });
+
         emailTextView.setOnClickListener(view -> {
             Intent launchEmailAppIntent = new Intent(Intent.ACTION_SENDTO);
             launchEmailAppIntent.setData(Uri.parse("mailto:thehungrydeveloper@jack.com"));
@@ -54,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     private void viewFinder() {
         startersCard = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_main_courses);
+        desertCard = findViewById(R.id.card_view_deserts);
         emailTextView = findViewById(R.id.text_view_email_address);
     }
 
