@@ -1,6 +1,7 @@
 package com.jack.thehungrydeveloper;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -27,5 +28,10 @@ public class MainCoursesActivity extends AppCompatActivity {
                 new Dish("Rhubarb and lamb pie", "A shortcrust pasty case filled with fresh rhubarb and minced lamb", 147),
                 new Dish("Bocconcini and spring onion salad", "A crunchy salad featuring bocconcini and fresh spring onion", 194)
         };
+
+        //interprets the array
+        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, mainCourses);
+        //set the array
+        mainCoursesList.setAdapter(dishesAdapter);
     }
 }

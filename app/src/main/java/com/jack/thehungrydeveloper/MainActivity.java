@@ -20,6 +20,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         viewFinder();
         setClickListener();
+
+        mainsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //set up the intent the startActivity needs that contains where you are now, and where you want to go
+                Intent mainCoursesActivityIntent = new Intent(MainActivity.this, MainCoursesActivity.class);
+
+                //starts new activity (new window)
+                startActivity(mainCoursesActivityIntent);
+            }
+        });
     }
 
     private void setClickListener() {
